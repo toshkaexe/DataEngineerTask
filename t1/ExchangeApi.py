@@ -59,12 +59,12 @@ if __name__ == '__main__':
     if user not in "BD" or len(user) != 1:
         print("I do now know what you doeas mean?")
     elif user == 'B': #dealers
-        print("You are Boss")
+        print("Ok, You are Boss")
         targetCurrency = input("Select [D]ollar or [E]uro? ").upper()
         if targetCurrency not in "DE" or len(user) != 1:
             print("I do now know what currency you doeas mean? ")
         elif targetCurrency == "D":
-            print("You selected Dollar as target currency")
+            print("OK, You selected Dollar as target currency")
             my_url.setUSD()
             print("Url for USD = {} ".format(my_url.url))
             print(loadRowdata(my_url.url))
@@ -99,6 +99,14 @@ if __name__ == '__main__':
             my_url.setAll()
             print("Url for All = {} ".format(my_url.url))
             pprint.pprint(loadRowdata(my_url.url))
+
+
+
+
+
+
+
+
 
 '''
        country = input("Please select country [R]ussia,[E]uropa or [U]SA... ").upper()
