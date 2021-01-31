@@ -1,10 +1,8 @@
 import math
-from math import sum, subtract
 
-def sum(a,b):
-   return a+b
-def subtract(a,b):
-   return a - b
+from math import sum, substact
+
+
 
 
 def test_sum():
