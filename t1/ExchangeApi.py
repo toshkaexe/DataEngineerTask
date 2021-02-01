@@ -11,13 +11,13 @@ class Url:
         self.url = url
 
     def setUSD(self):
-        self.url = 'https://api.exchangeratesapi.io/history?base=USD&start_at=2020-01-01&end_at=2020-09-01'
+        self.url = 'https://api.exchangeratesapi.io/history?base=USD&start_at=2020-01-01&end_at=2020-12-31'
 
     def setEUR(self):
-        self.url = 'https://api.exchangeratesapi.io/history?base=EUR&start_at=2020-01-01&end_at=2020-09-01'
+        self.url = 'https://api.exchangeratesapi.io/history?base=EUR&start_at=2020-01-01&end_at=2020-12-31'
 
     def setRUB(self):
-        self.url = 'https://api.exchangeratesapi.io/history?base=USD&start_at=2020-01-01&end_at=2020-09-01'
+        self.url = 'https://api.exchangeratesapi.io/history?base=RUB&start_at=2020-01-01&end_at=2020-12-31'
 
 
 def loadRowdata(url):
@@ -33,13 +33,18 @@ def saveDataFrame(url, fileName):
     pd.DataFrame(dataParser(dataframe)).to_csv(fileName)
 
 
+currency_List = [
+    "AUD", "BGN", "BRL", "CAD", "CHF", "CNY", "CZK", "DKK", "EUR", "GBP", "HKD", "HRK", "HUF", "IDR", "ILS", "INR",
+    "ISK", "JPY", "KRW", "MXN", "MYR", "NOK", "NZD", "PHP", "PLN", "RON", "RUB", "SEK", "SGD", "THB", "TRY", "USD",
+    "ZAR"]
+
 if __name__ == '__main__':
     print("Tast E1")
     my_url = Url()
 
     user = input("Are you [B]oss or local [D]ealer? ").upper()
     if user not in "BD" or len(user) != 1:
-        print("I do now know what you doeas mean?")
+        print("I do now know what you does mean?")
     elif user == 'B':
         # boss
         print("Ok, You are Boss")

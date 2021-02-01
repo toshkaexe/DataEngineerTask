@@ -42,6 +42,7 @@ def dataParser(dataJson):
         item.append({
             "DAY": dataJson["rates"].index[i],
             TARGET_CURRENCY: dataJson["base"][0],
+           # CURRENCY_EUR: dataJson["rates"][i][CURRENCY_EUR],
             CURRENCY_AUD: dataJson["rates"][i][CURRENCY_AUD],
             CURRENCY_BGN: dataJson["rates"][i][CURRENCY_BGN],
             CURRENCY_BRL: dataJson["rates"][i][CURRENCY_BRL],
