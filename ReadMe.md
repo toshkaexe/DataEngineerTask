@@ -1,13 +1,3 @@
-https://docs.google.com/document/d/1WYA3V-eDgdtoiJDzAcQ-4k-q0zW0crBve5MKYq1y1Ls/edit
-Background: This is a practice within the recruiting process for the data engineer. It takes place between the first and the second interview and has to be prepared by the applicant before the second interview (the technical interview).
-
-Goal:
-get insights on how a problem is solved
-see the working style of an applicant
-see how the candidate present the results
-
-Preamble: There is no right or false. It’s not given, that you have to show a fancy presentation - you can also do it on a command line. Every human is different - someone is better in presenting/explaining, understanding users, problem-solving, programming or writes beautiful code. We want to understand how the applicant work and behave. So please do it your way and within your personal style!
-
 E1 - Use external Exchange Rate API and load exchange rates into a database
 
 Goal:
