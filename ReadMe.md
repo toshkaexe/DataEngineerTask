@@ -1,4 +1,4 @@
-E1 - Use external Exchange Rate API and load exchange rates into a database
+##  E1 - Use external Exchange Rate API and load exchange rates into a database
 
 Goal:
 please show how you downloaded the data (any observations, pitfalls?)
@@ -22,7 +22,7 @@ SELECT CAST('2020-01-01' AS DATE) AS date_date, CAST('EUR' AS CHAR(3)) AS target
 SELECT CAST('2020-02-01' AS DATE) AS date_date, CAST('GBP' AS CHAR(3)) AS target_currency, CAST('12.12' AS NUMERIC(14,4)) AS a_price UNION
 SELECT CAST('2020-03-01' AS DATE) AS date_date, CAST('RUB' AS CHAR(3)) AS target_currency, CAST('333.33' AS NUMERIC(14,4)) AS a_price;
 
-E2 - crawling, data extraction of a static website
+## E2 - crawling, data extraction of a static website
 A user asks about how he can obtain data of a website without spending days to extract the data by hand
 Look at https://www.urparts.com/index.cfm/page/catalogue and check for a manufacturer, then look into the categories, then the models and the result set where the part (number) before ‘ - ‘ and the part category
 crawl the overall at this point in time existing catalogue and create a CSV file with the following data (example with 10 lines):
@@ -39,7 +39,7 @@ Ammann,Roller Parts,ASC100,ND018214,LEFT SHAFT
 Ammann,Roller Parts,ASC100,ND018216,RIGHT SHAFT
 
 
-E3 - write a unit test
+## E3 - write a unit test
 Write at least one simple unit test for E1 or E2 with any framework you want!
 
 Hint: You also need this to be better prepared and understand the pairing session during the technical interview
