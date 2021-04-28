@@ -1,7 +1,7 @@
 ##  E1 - Use external Exchange Rate API and load exchange rates into a database
 
 Goal:
-please show how you downloaded the data (any observations, pitfalls?)
+please show how you downloaded the data 
 show and explain the data model you created
 show that you can convert multiple source (target) prices from a query result (eg. SQL “data example” below), into each base price
 
